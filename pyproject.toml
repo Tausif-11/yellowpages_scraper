@@ -1,0 +1,28 @@
+[build-system]
+requires = ["setuptools>=61.0.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yellowpages_scraper"
+version = "1.1.0"
+authors = [
+    { name="Mohammad Tausif" }
+]
+description = "Industrial multi-format B2B local business directory scraper pipeline."
+readme = "README.md"
+requires-python = ">=3.11"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "beautifulsoup4>=4.12.0",
+    "lxml>=5.1.0",
+    "requests>=2.31.0",
+    "pandas>=2.1.0",
+    "openpyxl>=3.1.0"
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
